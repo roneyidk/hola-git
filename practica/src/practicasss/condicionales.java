@@ -20,7 +20,7 @@ public class condicionales {
             System.out.println("Denegado, no puede acceder");
         }**/
         
-        //Realice un menu de calculadora
+        /**Realice un menu de calculadora
         
         int cal;
         System.out.println("Bienvenido a Calculadora Cientifica: ");
@@ -75,8 +75,20 @@ public class condicionales {
             case 5:{
                 System.out.println("Opcion incorrecta.");
             }
-        }
+        }**/
         
+        
+        //realiza un programa que identifique numeros pares e impares
+        
+        int num;
+        System.out.println("Digita un numero para saber si es par o impar: ");
+        num = leer.nextInt();
+        
+        if (num%2==0){
+            System.out.println("El numero es par");   
+        }else{
+            System.out.println("El numero es impar");
+        }
         
         
     }
