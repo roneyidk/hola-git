@@ -1,6 +1,7 @@
 
 package practicasss;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 /**
  *
  * @author patito321
@@ -78,7 +79,7 @@ public class condicionales {
         }**/
         
         
-        //realiza un programa que identifique numeros pares e impares
+        /**realiza un programa que identifique numeros pares e impares
         
         int num;
         System.out.println("Digita un numero para saber si es par o impar: ");
@@ -88,8 +89,22 @@ public class condicionales {
             System.out.println("El numero es par");   
         }else{
             System.out.println("El numero es impar");
+        }**/
+        
+        //Realizar un programa que calcule los numeros con multiplo de 10.
+        
+        int num,num2;
+        
+        num =Integer.parseInt(JOptionPane.showInputDialog("Elija un numero para calcular el mayor, el menor y si son iguales: "));
+        
+        num2=Integer.parseInt(JOptionPane.showInputDialog("ELija un numero pra calcular el mayor, el menor y si son iguales: "));
+
+        if(num > num2){
+            JOptionPane.showMessageDialog(null,"EL numero: "+num+" es mayor a el numero "+num2);
+        }else if(num == num2){
+            JOptionPane.showMessageDialog(null,"Los numeros son iguales");
+        }else{
+            JOptionPane.showMessageDialog(null,"El numero: "+num2+" es mayor a el numero "+num);
         }
-        
-        
     }
 }
