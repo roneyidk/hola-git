@@ -155,8 +155,17 @@ public class condicionales {
             //SI trabajo las 40 horas establecidas, no recibe pago extra.
             total = pay*hours;
             JOptionPane.showMessageDialog(null,"Sus salario por las "+hours+" horas trabajadas es de: $"+total);
+        }
+        //Pedir al usuario un numero desde el rango de 0 a 99.999, y calcular las cantidad de cifras
+        //que tiene el numero, si es mayor a 99.999, mostrar un mensaje
+        int num;
+        num = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero entre 0 a 99.999:"));
+        if ((num >= 0)&&(num <=99999)){
+            JOptionPane.showMessageDialog(null,"Las cantidad de cifras del numero es: "+String.valueOf(num).length());
+
+        }else{
+            JOptionPane.showMessageDialog(null,"El numero es mayor a 99.999 o menor a 0, por favor digite un numero entre 0 y 99.999");
         }**/
-        
         
     }
 }
