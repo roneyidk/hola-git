@@ -137,6 +137,24 @@ public class condicionales {
             total = shop;
             JOptionPane.showMessageDialog(null,"Su compra no llego al rango superior a $300"+
             " por lo que no obtiene descuento.\nEl total a pagar es de: $"+total);
+        }
+        
+        //Calcular el salario de una persona por horas, si trabaja mas de 40 horas
+        //se le paga $16 por hora, pero si trabaja mas de 40 horas, se le paga las 
+        //$16 dolares por hora y $20 por cada hora extra.
+
+        double pay=16, hours, ext=20, total;
+        hours = Double.parseDouble(JOptionPane.showInputDialog("Ingrese las horas trabajadas: "));
+        if (hours > 40){
+            //Primero se multiplica las 40 horas normales por su pago, luego se resta las horas trabajadas
+            //con las extras, para calcular el valor de las horas extras, y se sume con el valor de las
+            //horas normales.
+            total = (pay*40) + ((hours-40)*ext);
+            JOptionPane.showMessageDialog(null,"Su salario por las "+hours+" horas trabajadas es de: $"+total);
+        }else{
+            //SI trabajo las 40 horas establecidas, no recibe pago extra.
+            total = pay*hours;
+            JOptionPane.showMessageDialog(null,"Sus salario por las "+hours+" horas trabajadas es de: $"+total);
         }**/
         
         
