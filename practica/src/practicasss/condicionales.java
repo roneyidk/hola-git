@@ -1,7 +1,6 @@
 
 package practicasss;
 import java.util.Scanner;
-import javax.swing.JOptionPane;
 /**
  *
  * @author patito321
@@ -19,9 +18,9 @@ public class condicionales {
             System.out.println("Aprobado, acceda");
         }else{
             System.out.println("Denegado, no puede acceder");
-        }**/
+        }
         
-        /**Realice un menu de calculadora
+        Realice un menu de calculadora
         
         int cal;
         System.out.println("Bienvenido a Calculadora Cientifica: ");
@@ -76,10 +75,10 @@ public class condicionales {
             case 5:{
                 System.out.println("Opcion incorrecta.");
             }
-        }**/
+        }
         
         
-        /**realiza un programa que identifique numeros pares e impares
+        realiza un programa que identifique numeros pares e impares
         
         int num;
         System.out.println("Digita un numero para saber si es par o impar: ");
@@ -89,9 +88,9 @@ public class condicionales {
             System.out.println("El numero es par");   
         }else{
             System.out.println("El numero es impar");
-        }**/
+        }
         
-        //Realizar un programa que calcule los numeros con multiplo de 10.
+        Realizar un programa que calcule los numeros mayores, menores o iguales.
         
         int num,num2;
         
@@ -106,5 +105,40 @@ public class condicionales {
         }else{
             JOptionPane.showMessageDialog(null,"El numero: "+num2+" es mayor a el numero "+num);
         }
+        * 
+        System.out.println("Digita tu nota: ");
+        double nota=leer.nextDouble();
+        
+        String result = (nota>40) ? "pass" : "fail";
+        System.out.println("Tu resultado del examen es: "+result);
+        
+        Realiza un programa que verifique si el dato solicitado es una letra
+        char l;
+        l = JOptionPane.showInputDialog("Digite una variable:").charAt(0);
+
+        if (Character.isLetter(l)){
+            JOptionPane.showMessageDialog(null,"La variable es la letra: "+l);
+
+        }else{
+            JOptionPane.showMessageDialog(null,"La variable no es una letra, es un numero o simbolo: "+l);
+        }
+        
+        //En megaplaza se hace un 20% de descuento a los clientes que su compra supere los 
+        //$300. Cual sera la cantida que pagara una persona por su compra.
+
+        double shop, desct=0.20, total;
+        shop=Double.parseDouble(JOptionPane.showInputDialog("Digite su valor de compra: "));
+
+        if (shop > 300){
+            total = shop - (shop*desct);
+            JOptionPane.showMessageDialog(null,"Su compra es mayor a $300 Dolares, por lo que"+
+            " adquiere un descuento del 20%.\nEl total a pagar es de: $"+total);
+        }else{
+            total = shop;
+            JOptionPane.showMessageDialog(null,"Su compra no llego al rango superior a $300"+
+            " por lo que no obtiene descuento.\nEl total a pagar es de: $"+total);
+        }**/
+        
+        
     }
 }
