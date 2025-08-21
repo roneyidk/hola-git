@@ -1,6 +1,7 @@
 
 package practicasss;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 /**
  *
  * @author patito321
@@ -167,5 +168,16 @@ public class condicionales {
             JOptionPane.showMessageDialog(null,"El numero es mayor a 99.999 o menor a 0, por favor digite un numero entre 0 y 99.999");
         }**/
         
+        //Realizar un programa que solicite el dia, mes y anio, y indique si la fecha es correcta
+        //Considerando que el mes no puede ser mayor a 12, y el dia no puede ser mayor a 30.
+        int day,month,year;
+        day = Integer.parseInt(JOptionPane.showInputDialog("Digite un dia:"));
+        month = Integer.parseInt(JOptionPane.showInputDialog("Digite un mes:"));
+        year = Integer.parseInt(JOptionPane.showInputDialog("Digite un anio:"));
+        if((day >=1 && day <= 30)&&(month >= 1 && month <=12)&&(year > 1000)){
+            JOptionPane.showMessageDialog(null, "La fecha es correcta\nDia: "+day+"Mes: "+month+"Year: "+year);
+        }else{
+            JOptionPane.showMessageDialog(null, "La fecha no existe");
+        }
     }
 }
