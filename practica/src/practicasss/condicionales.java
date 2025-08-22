@@ -166,7 +166,7 @@ public class condicionales {
 
         }else{
             JOptionPane.showMessageDialog(null,"El numero es mayor a 99.999 o menor a 0, por favor digite un numero entre 0 y 99.999");
-        }**/
+        }
         
         //Realizar un programa que solicite el dia, mes y anio, y indique si la fecha es correcta
         //Considerando que el mes no puede ser mayor a 12, y el dia no puede ser mayor a 30.
@@ -178,6 +178,24 @@ public class condicionales {
             JOptionPane.showMessageDialog(null, "La fecha es correcta\nDia: "+day+"Mes: "+month+"Year: "+year);
         }else{
             JOptionPane.showMessageDialog(null, "La fecha no existe");
+        }**/
+        
+        //Pedir al usuario una nota del 0 al 10, y mostrar un mensaje segun la nota
+        //de forma: insuficiente, suficiente, bien, notable, sobresaliente
+        double n;
+        n=Double.parseDouble(JOptionPane.showInputDialog("Digite su nota: "));
+        if (n<5){
+            JOptionPane.showMessageDialog(null, "Insuficiente");
+        }else if (n>=5 && n<=7){
+            JOptionPane.showMessageDialog(null, "Suficiente");
+        }else if(n>7 && n<8){
+            JOptionPane.showMessageDialog(null, "Bien");
+        }else if(n>=8 && n<=9){
+            JOptionPane.showMessageDialog(null, "Notable");
+        }else{
+            JOptionPane.showMessageDialog(null, "Sobresaliente");
         }
+        
+
     }
 }
