@@ -194,7 +194,7 @@ public class condicionales {
             JOptionPane.showMessageDialog(null, "Notable");
         }else{
             JOptionPane.showMessageDialog(null, "Sobresaliente");
-        }**/
+        }
 
         //Ralice un calculadora aritmetica, que calcule dos numeros enteros, para 
         //llamar a la operacion suma, deba hacerlo con s minuscula o S mayuscula,
@@ -245,7 +245,42 @@ public class condicionales {
             }
             default:
                 JOptionPane.showMessageDialog(null,"La opcion es incorrecta");
-        }
+        }**/
 
+        //Simule un cajero automatico, con un saldo inicial de $1000 dolares, con un menu de opciones
+        //que tenga las opciones de, Ingresar dinero, regirar dinero, consultar saldo y salir.
+
+        double saldo=1000,ingreso,retiro;
+        int op;
+        
+        op=Integer.parseInt(JOptionPane.showInputDialog("Bienvenido a su cajero automatico\nQue operacion desea realizar:"+
+        "\n1. Ingresar dinero\n2. Retirar dinero\n3. Consultar saldo\n4. Salir"));
+
+        switch(op){
+            case 1:{
+                ingreso=Double.parseDouble(JOptionPane.showInputDialog("Digite la cantidad que desee ingresar: "));
+                saldo=saldo+ingreso;
+                JOptionPane.showMessageDialog(null,"Su nuevo saldo es de: $"+saldo);
+                break;
+            }
+            case 2:{
+                retiro=Double.parseDouble(JOptionPane.showInputDialog("Digite la cantidad que desee retirar: "));
+                if (retiro > saldo){
+                    JOptionPane.showMessageDialog(null, "Saldo insuficiente, su saldo actual es de: $"+saldo);
+                }else{
+                    saldo=saldo-retiro;
+                    JOptionPane.showMessageDialog(null,"Su nuevo saldo es de: $"+saldo);
+                }
+                break;
+            }
+            case 3:{
+                JOptionPane.showMessageDialog(null, "Su saldo actual es de $"+saldo);
+                break;
+            }
+            case 4:{
+                JOptionPane.showMessageDialog(null, "Gracias por usar el cajero automatico, vuelva pronto.");
+                break;
+            }
+        }
     }
 }
