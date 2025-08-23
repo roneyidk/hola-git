@@ -12,7 +12,16 @@ public class cicloss {
         while(i<=10){
             JOptionPane.showMessageDialog(null,i);
             i++;
-        }**/
+        }
+
+        int i=1,contador;
+        contador=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero de veces que desee repetir: "));
+        while(i<=contador){
+            JOptionPane.showMessageDialog(null,i);
+            i++;
+
+        }//Ejercicio aplicando la sintaxis while
+        **/
 
     }
 
