@@ -178,7 +178,7 @@ public class condicionales {
             JOptionPane.showMessageDialog(null, "La fecha es correcta\nDia: "+day+"Mes: "+month+"Year: "+year);
         }else{
             JOptionPane.showMessageDialog(null, "La fecha no existe");
-        }**/
+        }
         
         //Pedir al usuario una nota del 0 al 10, y mostrar un mensaje segun la nota
         //de forma: insuficiente, suficiente, bien, notable, sobresaliente
@@ -194,8 +194,58 @@ public class condicionales {
             JOptionPane.showMessageDialog(null, "Notable");
         }else{
             JOptionPane.showMessageDialog(null, "Sobresaliente");
-        }
+        }**/
+
+        //Ralice un calculadora aritmetica, que calcule dos numeros enteros, para 
+        //llamar a la operacion suma, deba hacerlo con s minuscula o S mayuscula,
+        //Para la resta r o R, para la multiplicacion m o M, y para la division d o D.
         
+        String op;
+
+        op=JOptionPane.showInputDialog("Digite la letra de la operacion que desee realizar: "+
+        "\nS. Suma"+"\nR. Resta"+"\nM. Multiplicacion"+"\nD. Division: \n");
+
+        char eleccion = Character.toUpperCase(op.charAt(0));
+        switch(eleccion){
+            case 'S':{
+                JOptionPane.showMessageDialog(null,"Ha elegido la opcion \nS. Suma");
+                int suma,n1,n2;
+                n1=Integer.parseInt(JOptionPane.showInputDialog("Digite el primer numero: "));
+                n2=Integer.parseInt(JOptionPane.showInputDialog("Digite el segundo numero: "));
+                suma=n1+n2;
+                JOptionPane.showMessageDialog(null,"El resultado de la suma es: "+suma);
+                break;
+            }
+            case 'R':{
+                JOptionPane.showMessageDialog(null,"Ha elegido la opcion \nR. Resta");
+                int resta,n1,n2;
+                n1=Integer.parseInt(JOptionPane.showInputDialog("Digite el primer numero: "));
+                n2=Integer.parseInt(JOptionPane.showInputDialog("Digite el segundo numero: "));
+                resta=n1-n2;
+                JOptionPane.showMessageDialog(null,"El resultado de la resta es: "+resta);
+                break;
+            }
+            case 'M':{
+                JOptionPane.showMessageDialog(null,"Ha elegido la opcion \nM. Multiplicacion");
+                double multi,n1,n2;
+                n1=Double.parseDouble(JOptionPane.showInputDialog("Digite el primer numero: "));
+                n2=Double.parseDouble(JOptionPane.showInputDialog("Digite el segundo numero: "));
+                multi=n1*n2;
+                JOptionPane.showMessageDialog(null,"El resultado de la multiplicacion es: "+multi);
+                break;
+            }
+            case 'D':{
+                JOptionPane.showMessageDialog(null,"Ha elegido la opcion \nD. Division");
+                double divi,n1,n2;
+                n1=Double.parseDouble(JOptionPane.showInputDialog("Digite el primer numero: "));
+                n2=Double.parseDouble(JOptionPane.showInputDialog("Digite el segundo numero: "));
+                divi=n1/n2;
+                JOptionPane.showMessageDialog(null,"El resultado de la division es: "+divi);
+                break;
+            }
+            default:
+                JOptionPane.showMessageDialog(null,"La opcion es incorrecta");
+        }
 
     }
 }
