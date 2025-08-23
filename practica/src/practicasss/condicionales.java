@@ -1,7 +1,6 @@
 
 package practicasss;
 import java.util.Scanner;
-import javax.swing.JOptionPane;
 /**
  *
  * @author patito321
@@ -245,7 +244,7 @@ public class condicionales {
             }
             default:
                 JOptionPane.showMessageDialog(null,"La opcion es incorrecta");
-        }**/
+        }
 
         //Simule un cajero automatico, con un saldo inicial de $1000 dolares, con un menu de opciones
         //que tenga las opciones de, Ingresar dinero, regirar dinero, consultar saldo y salir.
@@ -281,6 +280,8 @@ public class condicionales {
                 JOptionPane.showMessageDialog(null, "Gracias por usar el cajero automatico, vuelva pronto.");
                 break;
             }
-        }
+        }**/
+
+        
     }
 }
