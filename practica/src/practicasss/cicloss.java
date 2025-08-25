@@ -1,5 +1,7 @@
 package practicasss;
 
+import javax.swing.JOptionPane;
+
 public class cicloss {
     public static void main(String[] args) {
         /**Practicas con ciclos
@@ -23,6 +25,23 @@ public class cicloss {
         }//Ejercicio aplicando la sintaxis while
         **/
 
+        //Ejercicio que usuario aplique un limite y calcular si es multiple de 2 y su par
+        int lim, i=1;
+
+        lim=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el limite de numeros que desea saber si son pares: "));
+        while(i<=lim){
+            if(lim%2==0){
+                JOptionPane.showMessageDialog(null, i+"Es numero par: ");
+                i++;
+            }else{
+                JOptionPane.showMessageDialog(null, i+"No es numero par: ");
+                i++;
+            }
+            //Calcular su par
+            int par=lim*2;
+            JOptionPane.showMessageDialog(null, "El par de "+lim+" es: "+par);
+            i++;
+        }
     }
 
 }
