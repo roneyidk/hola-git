@@ -48,7 +48,6 @@ public class cicloss {
              
          }
          JOptionPane.showMessageDialog(null,"Good, you're a exit the program");
-         **/
         
         //Realice un programa donde el usuario deba digitar la contrasenia, y intentarlo en bucle hasta digitarla bien o decir la palabra exit
         //para salir del programa
@@ -66,6 +65,26 @@ public class cicloss {
         }else{
             JOptionPane.showMessageDialog(null,"Finish the program");
         }
+        
+        //Bucle de que el usuario adivine el numero guardado, hasta que no sea el numero adivinado, salga mensaje "the number's incorrect,
+        //please try again".
+        
+        int num=55,user,exit=101;
+        
+        user=Integer.parseInt(JOptionPane.showInputDialog("Guees the number between a range of 0 to 100\nor you're finish the program\n"
+                + "Write number 101 for exit the program"));
+        
+        while(user != num && user!=exit){
+        
+            user=Integer.parseInt(JOptionPane.showInputDialog("The number's incorrect, please try again."));
+            
+        }
+        if ( user == num){
+            JOptionPane.showMessageDialog(null, "The number is correct, YOUR WIN!");
+        }else if (user == exit){
+            JOptionPane.showMessageDialog(null,"You're exit the program");
+        }**/
+        
          
          
          
