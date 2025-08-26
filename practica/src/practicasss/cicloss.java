@@ -36,7 +36,7 @@ public class cicloss {
         JOptionPane.showMessageDialog(null, "El par de "+lim+" es: "+par);
         i++;
         }
-         **/
+         
          
          //Realice a program it's make the user write a word exit, for exit the program, and it's word's no indicated, show a message, "try again."
          
@@ -48,6 +48,24 @@ public class cicloss {
              
          }
          JOptionPane.showMessageDialog(null,"Good, you're a exit the program");
+         **/
+        
+        //Realice un programa donde el usuario deba digitar la contrasenia, y intentarlo en bucle hasta digitarla bien o decir la palabra exit
+        //para salir del programa
+        
+        String password="java123",user;
+        
+        user=JOptionPane.showInputDialog("Write the password correct \nOr Write 'exit' for finish the program: ");
+        
+        while(!user.equalsIgnoreCase(password) && !user.equalsIgnoreCase("exit")){
+            user=JOptionPane.showInputDialog("Incorrect Password, try again.\nOr write 'exit' for finish te program: ");
+            
+        }
+        if(user.equalsIgnoreCase(password)){
+            JOptionPane.showMessageDialog(null,"Correct Password, Welcome user!");
+        }else{
+            JOptionPane.showMessageDialog(null,"Finish the program");
+        }
          
          
          
