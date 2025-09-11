@@ -83,7 +83,26 @@ public class cicloss {
             JOptionPane.showMessageDialog(null, "The number is correct, YOUR WIN!");
         }else if (user == exit){
             JOptionPane.showMessageDialog(null,"You're exit the program");
-        }**/
+        }
+        **/
+        
+        //Leer un numero y mostrar su cuadrado, repetir el proceso hasta que se introduzca un numero negativo.
+        
+        int num, potencia;
+        
+        num = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero: "));
+        
+        while(num>=0){
+            potencia = (int)Math.pow(num,2);
+            
+            JOptionPane.showMessageDialog(null,"El numero "+num+" elevado al cuadrado es: "+potencia);
+            
+            num = Integer.parseInt(JOptionPane.showInputDialog("Digite otro numero: "));
+        }
+        
+
+        
+        
         
          
          
