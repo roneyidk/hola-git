@@ -1,6 +1,5 @@
 package practicasss;
 import javax.swing.JOptionPane;
-
 public class cicloss {
     public static void main(String[] args) {
         /**Practicas con ciclos
@@ -111,7 +110,7 @@ public class cicloss {
             }
             num = Integer.parseInt(JOptionPane.showInputDialog("Digite otro numero: "));
 
-        }**/
+        }
 
         //Leer numeros hasta que se introduzca un 0, Para cada uno indicar si es par o impar
         int num;
@@ -123,6 +122,20 @@ public class cicloss {
                 JOptionPane.showMessageDialog(null,"El numero "+num+" es impar");
             }
             num = Integer.parseInt(JOptionPane.showInputDialog("Digite otro numero: "));
+        }**/
+
+        //Pedir numeros hasta que se teclee uno negativo, y mostrar cauntos numeros se ha introducido
+        int num, cont=0;
+        num = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero:"));
+
+        while(num>=0){
+            cont++;
+            num = Integer.parseInt(JOptionPane.showInputDialog("Digite otro numero: "));
+            if(num<0){
+                JOptionPane.showMessageDialog(null,"La cantidad de numeros introducidos es: "+cont);
+            }else{
+                cont++;
+            }
         }
          
 
