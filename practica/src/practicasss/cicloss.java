@@ -136,7 +136,7 @@ public class cicloss {
             }else{
                 cont++;
             }
-        }**/
+        }
 
         //Numero random del 1 al 100, y que el usuario lo adivine, mostrando mensajes de "digite un numero menor" o "digite un numero mayor", y que cuando de el numero correcto, muestre un mensaje "felicidades"
         int num, cont=0, aleatorio;
@@ -155,8 +155,19 @@ public class cicloss {
 
             }
             num = Integer.parseInt(JOptionPane.showInputDialog("Adivine el numero entre 1 y 100: "));
-        }
+        }**/
          
+        //pedir numeros hasta que se teclee un 0, y mostrar la suma de todos los numeros introducidos
+        int num, suma=0;
+        num = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero: "));
+        while (num!=0){
+            suma=suma+num;
+            num = Integer.parseInt(JOptionPane.showInputDialog("Digite otro numero: "));
+            if(num==0){
+                JOptionPane.showMessageDialog(null,"La suma de los numeros introducidos es: "+suma);
+            }
+        }
+
 
         
         
