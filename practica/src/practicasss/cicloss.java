@@ -155,7 +155,7 @@ public class cicloss {
 
             }
             num = Integer.parseInt(JOptionPane.showInputDialog("Adivine el numero entre 1 y 100: "));
-        }**/
+        }
          
         //pedir numeros hasta que se teclee un 0, y mostrar la suma de todos los numeros introducidos
         int num, suma=0;
@@ -166,6 +166,20 @@ public class cicloss {
             if(num==0){
                 JOptionPane.showMessageDialog(null,"La suma de los numeros introducidos es: "+suma);
             }
+        }**/
+        //Digite numeros hasta que se teclee un negativo, y calcular la media  de los numeros positivos introducidos 
+        int num, contador=0, suma=0;
+        double media;
+        num = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero: "));
+        while(num>=0){
+            suma = suma+num;
+            contador++;
+            num = Integer.parseInt(JOptionPane.showInputDialog("Digite otro numero: "));
+            if(num<0){
+                media = (double)suma/contador;
+                JOptionPane.showMessageDialog(null,"La media de los numeros positivos introducidos es: "+media);
+            }
+            
         }
 
 
