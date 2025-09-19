@@ -166,7 +166,7 @@ public class cicloss {
             if(num==0){
                 JOptionPane.showMessageDialog(null,"La suma de los numeros introducidos es: "+suma);
             }
-        }**/
+        }
         //Digite numeros hasta que se teclee un negativo, y calcular la media  de los numeros positivos introducidos 
         int num, contador=0, suma=0;
         double media;
@@ -180,6 +180,12 @@ public class cicloss {
                 JOptionPane.showMessageDialog(null,"La media de los numeros positivos introducidos es: "+media);
             }
             
+        }**/
+
+        //escribir todos los numeros de 100 al 0, de 7 en 7
+        
+        for(int i=100;i>=0;i=i-7){
+            JOptionPane.showMessageDialog(null,i);
         }
 
 
