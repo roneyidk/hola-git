@@ -180,13 +180,22 @@ public class cicloss {
                 JOptionPane.showMessageDialog(null,"La media de los numeros positivos introducidos es: "+media);
             }
             
-        }**/
+        }
 
         //escribir todos los numeros de 100 al 0, de 7 en 7
         
         for(int i=100;i>=0;i=i-7){
             JOptionPane.showMessageDialog(null,i);
+        }**/
+
+        //Pedir 10 numeros y mostrar la suma total
+        int num, suma=0;
+        for(int i=1;i<=10;i++){
+            num = Integer.parseInt(JOptionPane.showInputDialog("Digite el numero "+i+": "));
+            suma=suma+num;
+
         }
+        JOptionPane.showMessageDialog(null,"La suma total de los 10 numeros es: "+suma);    
 
 
         
